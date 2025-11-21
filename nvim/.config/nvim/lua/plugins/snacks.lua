@@ -7,7 +7,8 @@ return {
     explorer = { enabled = true },
     indent = { enabled = true },
     picker = { enabled = true },
-    lazygit = { enabled = true }
+    lazygit = { enabled = true },
+    terminal = { enabled = true }
   },
 
   keys = {
@@ -44,10 +45,12 @@ return {
     { "gao", function() Snacks.picker.lsp_outgoing_calls() end, desc = "C[a]lls Outgoing" },
     { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
     { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+    { "<leader>sq", function() Snacks.picker.qflist() end, desc = "Quickfix List" },
 
     -- others
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
     { "<c-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal" },
+
 
 
     init = function()
