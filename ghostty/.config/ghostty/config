@@ -1,6 +1,9 @@
 # Font Config
-font-family = "JetBrains Mono"
+font-family = "VictorMono Nerd Font Propo"
+# font-family = "CaskaydiaCove Nerd Font Propo"
 font-size = 14
+font-thicken = true
+font-thicken-strength = 255
 
 # Theme
 theme = TokyoNight
@@ -24,3 +27,8 @@ title = "Ghostty"
 # Keybinds
 keybind = global:cmd+backquote=toggle_quick_terminal
 
+# shaders
+custom-shader = shaders/cursor-smear.glsl
+# custom-shader = shaders/cursor-smear-fade.glsl
+custom-shader = shaders/better_crt.glsl
+custom-shader = shaders/bloom_50.glsl
